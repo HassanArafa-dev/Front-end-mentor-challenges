@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 
-[Live Demo](https://hassanarafa-dev.github.io/Front-end-mentor-challenges/social-links-profile-main/)
+- [Live Demo](https://hassanarafa-dev.github.io/Front-end-mentor-challenges/social-links-profile-main/)
 
 Thanks for checking out this front-end coding challenge.
 
