@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz@0,14..32;1,14..32&display=swap");
+
+:root {
+  --purple-100: hsl(254, 88%, 90%);
+  --purple-500: hsl(256, 67%, 59%);
+
+  --yellow-100: hsl(31, 66%, 93%);
+  --yellow-500: hsl(39, 100%, 71%);
+
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+
+  --main-padding: 1rem;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "DM Sans";
+  line-height: 1;
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+
+.bento__wrapper {
+  display: grid;
+    grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+    ;
+    grid-column: 1fr;
+  gap: 2rem;
+  padding: calc(var(--main-padding) + 1rem) 1rem;
+}
+
+.bento__wrapper__card {
+  border-radius: 10px;
+}
+
+.bento__wrapper__card:nth-child(1) {
+  padding: calc(var(--main-padding) + 1.5rem) 0;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--purple-500);
+}
+
+.bento__wrapper__card:nth-child(1) span {
+  color: var(--yellow-500);
+}
+
+.bento__wrapper__card:nth-child(2) {
+  padding: calc(var(--main-padding));
+  overflow: hidden;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.bento__wrapper__card:nth-child(3) {
+  padding: calc(var(--main-padding));
+  padding-bottom: 0;
+  overflow: hidden;
+  color: var(--black);
+  background-color: var(--yellow-500);
+}
+
+.bento__wrapper__card:nth-child(4) {
+  padding: calc(var(--main-padding) + 1rem) 1rem;
+  text-align: center;
+  overflow: hidden;
+  color: var(--black);
+  background-color: var(--purple-100);
+}
+
+.bento__wrapper__card:nth-child(5) {
+  padding: calc(var(--main-padding));
+  text-align: center;
+  color: var(--white);
+  background-color: var(--purple-500);
+}
+
+.bento__wrapper__card:nth-child(6) {
+  padding: calc(var(--main-padding));
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.bento__wrapper__card:nth-child(7) {
+  padding: var(--main-padding);
+  color: var(--black);
+  background-color: var(--yellow-100);
+}
+
+.bento__wrapper__card:nth-child(8) {
+  padding: calc(var(--main-padding));
+  color: var(--black);
+  background-color: var(--yellow-500);
+}
+
+.bento__wrapper__card .social__media--style {
+  margin-inline: auto;
+  margin-block-start: 0;
+  margin-block-end: 1.2rem;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
+.bento__wrapper__card .stars--style {
+  max-inline-size: 200px;
+}
+
+.bento__wrapper__card .instagram--style {
+  margin-block-end: 1rem;
+}
+
+.bento__wrapper__card .schedule--style {
+  position: relative;
+  top: 20px;
+  margin-block-end: -45px;
+  border-radius: 10px;
+}
+
+.bento__wrapper__card .schedule--style,
+.bento__wrapper__card .followers__growth,
+.bento__wrapper__card .grow__followers,
+.bento__wrapper__card .audience__growth,
+.create__post,
+.bento__wrapper__card .give__me__tips {
+  max-inline-size: 70%;
+}
+
+.bento__wrapper__card .schedule__to__social__media--style {
+  margin-block-end: 1.2rem;
+}
+
+.bento__wrapper__card .best__time {
+  margin-block-end: 1.2rem;
+}
+
+.bento__wrapper__card .followers__growth {
+  margin-block-end: 2rem;
+}
+
+.bento__wrapper__card .grow__followers {
+  margin-inline: auto;
+  font-size: 1.8rem;
+}
+
+.bento__wrapper__card .percentage {
+  font-size: 2.5rem;
+}
+
+.bento__wrapper__card .faster__audience {
+  margin-block: 1.2rem;
+  opacity: 70%;
+}
+
+.bento__wrapper__card .create__and {
+  margin-block-end: 1.2rem;
+  font-size: 1.8rem;
+}
+
+.bento__wrapper__card .create__and span {
+  color: var(--purple-500);
+}
+
+.bento__wrapper__card .write__your {
+  margin-block-end: 1.2rem;
+}
+
+.bento__wrapper__card .manage--style {
+  max-inline-size: 90%;
+}
+
+/* make it responsive // edit font-sizes and images on  diffrent screen sizes */
+/* write CLEAN code!! */

@@ -1,0 +1,157 @@
+.container {    
+    inline-size: 100%;
+    margin-inline: auto;
+}
+
+@media (min-width: 320px) {
+    .container {
+        max-inline-size: min(100%, 425px);
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .bento__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        max-inline-size: min(100%, 800px);
+    }
+
+.bento__wrapper__card .schedule--style,
+.bento__wrapper__card .followers__growth,
+.bento__wrapper__card .grow__followers,
+.bento__wrapper__card .audience__growth,
+.create__post,
+.bento__wrapper__card .give__me__tips {
+    max-inline-size: 80%;
+}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-inline-size: 1200px;
+    }
+
+    .bento__wrapper {
+        grid-template-areas: 
+            "one two two three"
+            "one four five three"
+            "six four five three"
+            "six seven eight eight"
+        ;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .bento__wrapper__card .create__and {
+        max-inline-size: 90%;
+    }
+
+    .bento__wrapper__card .followers__growth {
+        margin: 0;
+        max-inline-size: 45%;
+    }
+
+    .bento__wrapper__card .social__media--style {
+        max-inline-size: 360px;
+        font-size: 3.25rem;
+    }
+
+    .bento__wrapper__card .schedule--style {
+        max-inline-size: 90%;
+        left: 50%;
+        top: 10px;
+        /* margin-block-end: -125px; */
+        margin-block-end: -60px;
+        transform: translate(-50%, 0);
+    }
+
+    .bento__wrapper__card .manage--style {
+        max-inline-size: 200px;
+    }
+
+    .bento__wrapper__card .grow__followers {
+        font-size: 2.2rem;
+        max-inline-size: 250px;
+        margin-inline : 0;
+    }
+
+    .bento__wrapper__card .instagram--style {
+        max-inline-size: 145%;
+    }
+
+    .bento__wrapper__card .write__your {
+        max-inline-size: 150px;
+        margin-block-end: 3rem;
+    }
+
+    .bento__wrapper__card .give__me__tips {
+        max-inline-size: 100%;
+    }
+
+    .bento__wrapper__card .best__time {
+        position: relative;
+        /* left: 10px; */
+        max-inline-size: 179%;
+    }
+
+    .bento__wrapper__card:nth-child(4) {
+        text-align: start;
+    }
+
+    /* cards */
+
+    /* 10x social media */
+    .bento__wrapper__card:nth-child(1) {
+        grid-area: two;
+    }
+    
+    /* manage multiple accounts */
+    .bento__wrapper__card:nth-child(2) {
+        grid-area: four;
+    }
+
+    /* maintain */
+    .bento__wrapper__card:nth-child(3) {
+        grid-area: five;
+    }
+
+    /* Schedule to social media  */
+    .bento__wrapper__card:nth-child(4) {
+        grid-area: three;
+        padding: calc(var(--main-padding) + .5rem);
+    }
+    
+    /* Grow followers */
+    .bento__wrapper__card:nth-child(5) {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 0 15px;
+        grid-area: eight;
+        padding-right: 0;
+    }
+    
+    /* >56% */
+    .bento__wrapper__card:nth-child(6) {
+        grid-area: seven;
+    }
+    
+    /* Create Post */
+    .bento__wrapper__card:nth-child(7) {
+        grid-area: one;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-block: 0;
+    }
+    
+    /* Write your Content Using Ai */
+    .bento__wrapper__card:nth-child(8) {
+        grid-area: six;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-block: 0;
+    }
+}
