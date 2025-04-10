@@ -24,6 +24,11 @@ html {
 }
 
 body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  /*  */
   min-height: 100vh;
   font-family: "DM Sans";
   line-height: 1;
@@ -48,21 +53,11 @@ p {
   margin: 0;
 }
 
-
 .bento__wrapper {
   display: grid;
-    grid-template-areas: 
-        "one"
-        "two"
-        "three"
-        "four"
-        "five"
-        "six"
-        "seven"
-    ;
-    grid-column: 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
-  padding: calc(var(--main-padding) + 1rem) 1rem;
+  padding: calc(var(--main-padding));
 }
 
 .bento__wrapper__card {
@@ -70,7 +65,7 @@ p {
 }
 
 .bento__wrapper__card:nth-child(1) {
-  padding: calc(var(--main-padding) + 1.5rem) 0;
+  padding: calc(var(--main-padding) + 1.5rem) 1rem;
   text-align: center;
   color: var(--white);
   background-color: var(--purple-500);
