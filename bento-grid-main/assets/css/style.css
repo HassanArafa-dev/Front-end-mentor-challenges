@@ -24,10 +24,6 @@ html {
 }
 
 body {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  /*  */
   min-height: 100vh;
   font-family: "DM Sans";
   line-height: 1;
@@ -53,6 +49,9 @@ p {
 }
 
 #bento {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   min-height: 100vh;
 }
 
