@@ -52,6 +52,10 @@ p {
   margin: 0;
 }
 
+#bento {
+  min-height: 100vh;
+}
+
 .bento__wrapper {
   display: grid;
   grid-template-columns: 1fr;
